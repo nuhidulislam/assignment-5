@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-5</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lexend font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- tailwind cdn -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+
+
+<!-- daisy Ui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
+
+</head>
+<body>
+  <!-- nav section start here -->
+  <nav>
+    <div class="nav-container">
+      <div>
+        <button class="blog-btn"><a href="index.html">Home</a></button>
+      </div>
+  
+      <div class="donate-title">
+        <img src="images/donate 1.png" alt="">
+        <h1 class="text-2xl">Donate Bangladesh</h1>
+      </div>
+  
+  
+  
+      <div class="money-section">
+        <img src="images/Currency.png" alt="">
+        <h1 id="balance">25000 </h1>
+        <h1>BDT</h1>
+      </div>
+    </div>
+
+  
+     </div>
+  </nav>
+
+<!-- FAQ section start here -->
+<div class="join join-vertical w-full">
+  <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" checked="checked" />
+    <div class="collapse-title text-xl font-medium">What is the Document Object model (DOM)?</div>
+    <div class="collapse-content">
+      <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="collapse-title text-xl font-medium">How do you select on element from the DOM?</div>
+    <div class="collapse-content">
+      <p>There are some severial select system to select DOM. <br>
+        1. getElementById() <br>
+        2. getElementsByClassName() <br>
+        3. getElementsByTagName() <br>
+        4. querySelector() <br>
+        5. querySelectorAll() <br>
+      </p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow join-item border-base-300 border">
+    <input type="radio" name="my-accordion-4" />
+    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+    <div class="collapse-content">
+      <p>Event delegation is a powerful pattern used to handle DOM events, and it uses event bubbling to improve performance, simplify management, and help maintain code. By using a single listener on a parent element, you can effectively handle events for all child elements, even those that are added later.</p>
+    </div>
+    <div class="collapse collapse-arrow join-item border-base-300 border">
+      <input type="radio" name="my-accordion-4" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+      <div class="collapse-content">
+        <p> By doing following the methods we can manipulate an element's attributes and styles. Here  is given some example: <br>
+          1.Get an Attribute: <br>
+          const element = document.getElementById("myElement"); <br>
+const attributeValue = element.getAttribute("data-custom"); <br>
+2. Set an Attribute: <br>
+element.setAttribute("data-custom", "newValue");
+
+
+        </p>
+      </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+}
+
+/* nav section style start here */
+.option-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  background: #f9f7f3;
+}
+.nav-container {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+
+  margin: auto;
+}
+.blog-btn {
+  background: #b4f461;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.donate-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.donate-title img {
+  width: 60px;
+  height: 60px;
+}
+.money-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.money-section img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Donation and History section style  */
+.donation-history-section {
+  width: 1100px;
+  height: 140px;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.donation-bg {
+  width: 100%;
+
+  background: #B4F461;
+}
+.donation-btn {
+  /* background: #B4F461; */
+  background: transparent;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  border: 2px solid gray;
+  outline: none;
+}
+
+/* nav section style end here */
+/* donation section one style start here */
+.donation {
+  margin-top: 260px;
+}
+.donation-one-container {
+  width: 1100px;
+  height: 450px;
+  border: 2px solid gray;
+  margin: auto;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 30px;
+}
+.donation-img {
+  width: 50%;
+  height: 100%;
+}
+.donation-img img {
+  height: 100%;
+  width: 100%;
+}
+.donation-one-content {
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+}
+.donation-money {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 160px;
+  padding: 10px 15px;
+  background: #d4d2d2;
+  border-radius: 10px;
+}
+#donation-des {
+  color: gray;
+  text-align: justify;
+}
+#donate-money {
+  border: 2px solid gray;
+  width: 100%;
+  border-radius: 15px;
+  height: 40px;
+  padding: 5px 15px;
+}
+#donate-now-btn {
+  background: #b4f461;
+  width: 100%;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* tow */
+#donate-money-two {
+  border: 2px solid gray;
+  width: 100%;
+  border-radius: 15px;
+  height: 40px;
+  padding: 5px 15px;
+}
+#donate-now-btn-two {
+  background: #b4f461;
+  width: 100%;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* three */
+#donate-money-three {
+  border: 2px solid gray;
+  width: 100%;
+  border-radius: 15px;
+  height: 40px;
+  padding: 5px 15px;
+}
+#donate-now-btn-three {
+  background: #b4f461;
+  width: 100%;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.currency {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.modal-action {
+  width: 100%;
+}
+.close-btn {
+  margin: auto;
+  background: rgb(225, 222, 222);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* donation section one style end here */
+
+/* History section style start here */
+#donation-history-container{
+  width: 1100px;
+  
+height: 500px;
+margin: auto;
+}
+/* History section style end here */
+
+/* responsive  */
+/* mobile responsive start here */
+@media screen and (max-width: 576px) {
+  .nav-container {
+    max-width: 576px;
+    justify-content: space-between;
+    padding: 0px 10px;
+    display: flex;
+  
+  }
+  .donate-title h1{
+    font-size: 20px;
+  }
+  .donation-history-section {
+    max-width: 576px;
+  }
+
+  .donation-one-container {
+    flex-direction: column;
+    height: 900px;
+    max-width: 576px;
+  }
+  .donation-img {
+    width: 100%;
+    height: 50%;
+  }
+  .donation-one-content {
+    width: 100%;
+    height: 50%;
+  }
+}

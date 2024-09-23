@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-5</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Lexend font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- daisy Ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- nav section start here -->
+    <div class="option-container">
+      <nav>
+        <div class="nav-container">
+          <div>
+            <button class="blog-btn"><a href="blog.html">Blog</a></button>
+          </div>
+
+          <div class="donate-title pl-3">
+            <img src="images/donate 1.png" alt="" />
+            <h1 class="text-3xl">Donate Bangladesh</h1>
+          </div>
+
+          <div class="money-section">
+            <img src="images/Currency.png" alt="" />
+            <h1  id="amount" class="text-2xl">25000</h1>
+            <h1 class="text-2xl">BDT</h1>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Donation and History -->
+      <div class="donation-bg">
+        <div class="donation-history-section">
+          <div>
+            <button id="donation" class="donation-btn">Donation</button>
+          </div>
+          <div>
+            <button id="history" class="donation-btn">
+             History
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav section end here -->
+
+    <!-- donation section one start here -->
+    <div class="donation mx-auto"></div>
+    <div id="donation-one-container" class="donation-one-container ">
+      <div class="donation-img">
+        <img src="images/donation-img-1.png" alt="" />
+      </div>
+      <div class="donation-one-content space-y-5">
+        <div class="donation-money">
+          <img src="images/Currency.png" alt="" />
+          <h1 id="donate-amount">3000</h1>
+          <h1>BDT</h1>
+        </div>
+        <h1 class="text-2xl">Donate for Flood at Noakhali, Bangladesh.</h1>
+        <p id="donation-des">
+          The recent floods in Noakhali have caused significant damage to homes
+          infrastructure. Your donation will help provide essential supplies and
+          to those affected by this disaster. Every contribution, big or small,
+          makes difference. Please join us in supporting the relief efforts and
+          making a positive impact on the lives of those in need.
+        </p>
+
+        <input
+          id="donate-money"
+          type=""
+          name=""
+          value=""
+          placeholder="Write Donation Amount"
+        />
+        <button id="donate-now-btn" onclick="">
+          Donate Now
+        </button>
+      </div>
+    </div>
+<!-- donation section one end here --> 
+
+    <!-- Donation Two start here -->
+    <div id="donation-two-container" class="donation-one-container">
+      <div class="donation-img">
+        <img src="images/donation-2.png" alt="" />
+      </div>
+      <div class="donation-one-content space-y-5">
+        <div class="donation-money">
+          <img src="images/Currency.png" alt="" />
+          <h1 id="donate-amount-two">9000</h1>
+          <h1>BDT</h1>
+        </div>
+        <h1 class="text-2xl">Donate for Flood Relief in Feni,Bangladesh</h1>
+        <p id="donation-des">
+          The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+        </p>
+
+        <input
+          id="donate-money-two"
+          type=""
+          name=""
+          value=""
+          placeholder="Write Donation Amount"
+        />
+        <button id="donate-now-btn-two" onclick="">
+          Donate Now
+        </button>
+      </div>
+    </div>
+
+    <!-- donation two end here -->
+
+
+
+
+
+    <!-- Donation Two three here -->
+    <div id="donation-three-container" class="donation-one-container">
+      <div class="donation-img">
+        <img src="images/donation-3.png" alt="" />
+      </div>
+      <div class="donation-one-content space-y-5">
+        <div class="donation-money">
+          <img src="images/Currency.png" alt="" />
+          <h1 id="donate-amount-three">24000</h1>
+          <h1>BDT</h1>
+        </div>
+        <h1 class="text-2xl">Aid for Injured in the Quota Movement</h1>
+        <p id="donation-des">
+          The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies ing this challenging time. Every dir recovery. Please consider making a donation to support these brave individuals in their time of need.
+        </p>
+
+        <input
+          id="donate-money-three"
+          type=""
+          name=""
+          value=""
+          placeholder="Write Donation Amount"
+        />
+        <button id="donate-now-btn-three" onclick="">
+          Donate Now
+        </button>
+      </div>
+    </div>
+
+    <!-- donation three end here -->
+
+    
+    
+     
+    
+
+   <!-- History section start here -->
+    
+   <div class="hidden" id="donation-history-container">
+   
+   
+
+   </div>
+   <!-- History section end here -->
+
+    
+
+    <!-- Open the modal using ID.showModal() method -->
+ 
+      <button class="btn hidden" onclick="my_modal_5.showModal()">Alauddin</button>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <h3 class="text-3xl text-center font-bold">Congrates!</h3>
+        <div class="currency">
+          <img class="" src="images/Currency.png" alt="" />
+        </div>
+        <p class="py-4 text-center">You Have Donated for Humankind</p>
+        <h1 class="text-center text-3xl font-bold">Successfully</h1>
+        <div class="modal-action">
+          <form class="close-btn" method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <div>
+              <button>Close Confirmation</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  
+
+    <script src="common.js"></script>
+  </body>
+</html>
