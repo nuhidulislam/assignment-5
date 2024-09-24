@@ -189,14 +189,14 @@ nav {
   outline: none;
 }
 /* four */
-#donate-money-four {
+#donate-money-four{
   border: 2px solid gray;
   width: 100%;
   border-radius: 15px;
   height: 40px;
   padding: 5px 15px;
 }
-#donate-now-btn-four {
+#donate-now-btn-four{
   background: #b4f461;
   width: 100%;
   color: black;
